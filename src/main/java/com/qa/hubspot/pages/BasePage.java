@@ -37,7 +37,7 @@ public class BasePage {
 		String browser = prop.getProperty("browser");
 
 		if (browser.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "/Users/NaveenKhunteta/Downloads/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\lenovo\\Desktop\\Drivers\\chromedriver.exe");
 			//driver = new ChromeDriver();
 			tldriver.set(new ChromeDriver());
 		} else if (browser.equals("ff")) {
