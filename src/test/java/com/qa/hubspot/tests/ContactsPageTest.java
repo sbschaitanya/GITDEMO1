@@ -45,7 +45,7 @@ public class ContactsPageTest {
 		Assert.assertTrue(contactsPage.verifyContactsPageHeader());
 	}
 	
-	@DataProvider(name = "getContactsData", parallel=true)
+	@DataProvider(name = "getContactsData", parallel=false)
 	public Object[][] getContactsTestData(){
 		Object contactsData[][] = ExcelUtil.getTestData(Constants.CONTACT_SHEET_NAME);
 		return contactsData;
